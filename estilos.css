@@ -1,0 +1,468 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Russo+One&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*--------------------------------------------------------------+
+¦ Default - Mobile First (até 767px)                            ¦
++---------------------------------------------------------------*/
+.section {
+  width: 100%;
+  margin-top: 5vh;
+  border-top: 1px solid #4ECDC4;
+  padding-top: 5%;
+}
+
+.section h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+a { 
+  color: #2C3E50;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #1f3144;
+}
+
+/*========== Nav ==========*/
+#navLinks {
+  display: none;
+}
+
+nav {
+  width: 90%;
+  margin: 0% 5%;
+  height: 7vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-family: "Russo One", sans-serif;
+  font-weight: lighter;
+  color: #4ECDC4;
+  font-size: 2rem;
+}
+
+#menuBar {
+  font-size: 1.7rem;
+  color: #4ECDC4;
+}
+
+body {
+  width: 100%;
+  background-color: #F8F9FA;
+  font-family: "Montserrat","sans serif";
+  color: #2C3E50;
+}
+
+main {
+  width: 90vw;
+  margin: 0vh 5vw;
+}
+
+.divMenuBarNone {
+  display: none;
+}
+
+.divMenuBarActive {
+  position: absolute;
+  width: 90vw;
+  height: 20vh;
+  margin: 0% 5%;
+  background-color: #F8F9FA;
+  border: 1px solid #4ECDC4;
+  font-weight: 500;
+  font-size: 1.2rem;
+  padding: 3%;
+}
+
+.divMenuBarActive li {
+  line-height: 200%;
+}
+
+ul li {
+  list-style: none;
+}
+
+/*========== Section Home ==========*/
+#home {
+  width: 100%;
+  height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/image480.png") center/cover no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #F8F9FA;
+}
+
+#homeTitle {
+  width: 50%;
+  height: 25%;
+  padding-right: 10px;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  text-align: right;
+  font-size: 1.5rem;
+  border-right: 1px solid #4ECDC4;
+}
+
+#homeSlogan {
+  width: 50%;
+  height: 25%;
+  padding-left: 10px;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.slogan .line {
+  display: block;
+}
+
+/*========== Section Sobre Nós ==========*/
+#sobre p {
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+/*========== Section Nossos Serviços ==========*/
+.sectionServ {
+  width: 100%;
+  height: 22vh;
+  margin-top: 3vh;
+  padding: 3%;
+  border-radius: 10px;
+  box-shadow: 0px 5px 15px #d9d9d9;
+  text-align: center;
+  min-height: 25vh;
+}
+
+.sectionServ:hover {
+  background-color: #f4f4f4;
+}
+
+.sectionServ i {
+  color: #4ECDC4;
+  font-size: 3rem;
+}
+
+.sectionServ h3 {
+  color: #2C3E50;
+  font-size: 1.6rem;
+}
+
+.sectionServ p {
+  font-size: 1rem;
+  margin-top: 5%;
+}
+
+/*========== Section Depoimentos ==========*/
+.sectionDepUser {
+  width: 100%;
+  background-color: #f2f2f2;
+  border: 1px solid #4ECDC4;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #ededed;
+  margin-top: 2vh;
+  padding: 2%;
+}
+
+.divPerfil {
+  width: 100%;
+  display: grid;
+  grid-template-areas: 
+    "foto nome"
+    "estrelas empresa";
+  gap: 2% 3%;
+}
+
+.depFoto {
+  grid-area: foto;
+  display: flex;
+  justify-self: center;
+  align-items: center;
+}
+
+.depNome {
+  grid-area: nome;
+  align-content: center;
+  text-align: left;
+  font-size: 1.2rem;
+}
+
+.depEstrelas {
+  grid-area: estrelas;
+  align-content: center;
+  text-align: center;
+  color: #dfdf18;
+  font-size: 1.2rem;
+}
+
+.depEmpresa {
+  grid-area: empresa;
+  align-content: center;
+  text-align: left;
+  font-size: 1.1rem;
+}
+
+.sectionDepUser .text {
+  margin-top: 5%;
+  font-size: 1rem;
+}
+
+/*========== Section Contato ==========*/
+.divInfos {
+  width: 100%;
+}
+
+.divInfos div {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 5%;
+  font-size: 1.2rem;
+}
+
+.divInfos i {
+  padding-right: 5%;
+}
+
+.divForm {
+  width: 100%;
+  height: 40vh;
+}
+
+.divForm input, .divForm textarea, .botaoForm {
+  width: 100%;
+  margin-top: 2vh;
+  font-size: 1.3rem;
+  color: #2C3E50;
+  border: 1px solid #4ECDC4;
+  border-radius: 5px;
+}
+
+.divForm input {
+  height: 40px;
+  padding-left: 3%;
+}
+
+.divForm input:focus {
+  outline: 2px solid #4ECDC4;
+}
+
+.divForm textarea {
+  height: 120px;
+  padding: 2% 3%;
+}
+
+.divForm textarea:focus {
+  outline: 2px solid #4ECDC4;
+}
+
+.botaoForm {
+  height: 40px;
+  color: #F8F9FA;
+  background-color: #4ECDC4;
+}
+
+.botaoForm:hover {
+  background-color: #3BB5AD;
+}
+
+.botaoForm:active {
+  font-size: 1.2rem;
+}
+
+/*========== footer ==========*/
+footer {
+  width: 100vw;
+  height: 3vh;
+  font-size: 0.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #2C3E50;
+  color: #F8F9FA;
+}
+
+/*--------------------------------------------------------------+
+¦ Tablet - min 768px                                            ¦
++---------------------------------------------------------------*/
+@media (min-width: 768px) {
+  #servicos h2, #depoimentos h2 {
+    width: 100%;
+  }
+
+  /*========== Home ==========*/
+  #home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/image768.png") center/cover no-repeat;
+  }
+
+  #homeTitle {
+    font-size: 2.2rem;
+    height: 30%;
+  }
+
+  #homeSlogan {
+    font-size: 1.9rem;
+    height: 30%;
+  }
+
+  a {
+    margin: 2%;
+  }
+
+  .divMenuBarActive {
+    height: 20%;
+    padding: 1%;
+  }
+
+  /*========== Nossos Serviços ==========*/
+  #servicos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+  .sectionServ {
+    width: 45%;
+  }
+
+  /*========== Depoimentos ==========*/
+  #depoimentos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 5%;
+  }
+
+  .sectionDepUser {
+    width: 45%;
+  }
+
+  .depFoto {
+    grid-area: foto;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+  }
+
+  /*========== Contato ==========*/
+  .divInfos div {
+    margin-top: 2%;
+  }
+
+  .divInfos i {
+    padding-right: 3%;
+  }
+
+  .divForm input, .divForm textarea {
+    padding-left: 1%;
+  }
+}
+
+/*--------------------------------------------------------------+
+¦ Small Desktop - min 1024px                                    ¦
++---------------------------------------------------------------*/
+@media (min-width: 1024px) {
+  #home {
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("./images/image1024.png") center/cover no-repeat;
+  }
+
+  main {
+    width: 96vw;
+    margin: 0vh 2vw;
+  }
+
+  #servicos h2, #depoimentos h2, #contato h2 {
+    width: 100%;
+  }
+
+  /*========== Nav ==========*/
+  nav {
+    width: 96%;
+    margin: 0% 2%;
+  }
+
+  #menuBar {
+    display: none;
+  }
+
+  .divMenuBarActive {
+    display: none;
+  }
+
+  #navLinks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    color: #2C3E50;
+    font-weight: 500;
+    gap: 3rem;
+  }
+
+  /*========== Home ==========*/
+  #homeTitle {
+    font-size: 2.5rem;
+    height: 35%;
+  }
+
+  #homeSlogan {
+    font-size: 2.2rem;
+    height: 35%;
+  }
+
+  a {
+    margin: 2%;
+  }
+
+  .divMenuBarActive {
+    height: 20%;
+    padding: 1%;
+  }
+
+  /*========== Sobre Nós ==========*/
+  #sobre p {
+    padding: 0% 10%;
+  }
+
+  /*========== Nossos Serviços ==========*/
+  .sectionServ {
+    height: 30vh;
+  }
+
+  /*========== Contato ==========*/
+  .divContato {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 5%;
+  }
+
+  .divInfos {
+    width: 45%;
+  }
+
+  .divForm {
+    width: 45%;
+  }
+
+  .divInfos div {
+    margin-top: 4%;
+  }
+}
