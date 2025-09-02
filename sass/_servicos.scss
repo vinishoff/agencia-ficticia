@@ -1,0 +1,38 @@
+@use './variaveis';
+@use './mixins';
+
+.servicos {
+  width: 100%;
+  margin: 3%;
+  padding: 3%;
+  text-align: center;
+  border-radius: variaveis.$border-radius;
+  border: 1px solid variaveis.$color-gray-light;
+  box-shadow: 0px 5px 15px variaveis.$color-gray-light;
+  @include mixins.flex-align(center, column);
+
+  @media (min-width: 768px){
+    width: 44%;
+    min-height: 30vh;
+  }
+}
+
+.servicos:hover {
+  background-color: variaveis.$color-gray-light;
+}
+
+.servicos__icon {
+  width: 100%;
+  font-size: variaveis.$text-5xl;
+  color: variaveis.$color-primary;
+}
+
+.servicos__title {
+  font-size: variaveis.$text-2xl;
+  margin: 1vh 0vh;
+}
+
+.servicos__text {
+  font-size: variaveis.$text-xl;
+  text-align: center;
+}

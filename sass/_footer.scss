@@ -1,0 +1,12 @@
+@use './variaveis';
+@use './mixins';
+
+.footer {
+  width: 100vw;
+  height: 3vh;
+  font-size: variaveis.$text-sm;
+  @include mixins.flex-align(center);
+  background-color: variaveis.$color-secondary;
+  color: variaveis.$color-gray-light;
+  margin-top: 3%;
+}

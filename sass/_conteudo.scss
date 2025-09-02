@@ -1,0 +1,37 @@
+@use './variaveis';
+@use './mixins';
+
+.body {
+  width: 96vw;
+  color: variaveis.$color-secondary;
+  font-family: variaveis.$font-primary;
+  background-color: variaveis.$color-background;
+}
+
+.display-block {
+  display: block;
+}
+
+.main {
+  margin: 0vh 2vw;
+
+  @media (min-width: 1024px){
+    margin: 0vh 4vw;
+  }
+}
+
+.section {
+  @include mixins.base-section();
+}
+
+.section__title {
+  @include mixins.base-section-title();
+}
+
+.section__text {
+  @include mixins.base-section-text();
+
+  @media (min-width: 1024px){
+    padding: 0% 10%;
+  }
+}

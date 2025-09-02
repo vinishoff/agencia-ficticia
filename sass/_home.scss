@@ -1,0 +1,58 @@
+@use './variaveis';
+@use './mixins';
+
+.home {
+  width: 100%;
+  height: 90vh;
+  @include mixins.flex-align();
+  color: variaveis.$color-background;
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/image480.png") center/cover no-repeat;
+
+  @media (min-width: 768px){
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/image768.png") center/cover no-repeat;
+  }
+
+  @media (min-width: 1024px){
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("/images/image1024.png") center/cover no-repeat;
+  }
+}
+
+.home__title {
+  width: 50%;
+  height: 25%;
+  @include mixins.flex-align(end);
+  text-align: right;
+  font-size: variaveis.$text-2xl;
+  padding-right: 10px;
+  border-right: 1px solid variaveis.$color-primary;
+
+  @media (min-width: 768px){
+    height: 30%;
+    font-size: variaveis.$text-3xl;
+  }
+
+  @media (min-width: 1024px){
+    height: 35%;
+    font-size: variaveis.$text-4xl;
+  }
+}
+
+.home__slogan {
+  width: 50%;
+  height: 25%;
+  padding-left: 10px;
+  @include mixins.flex-align(start);
+  text-align: left;
+  font-size: variaveis.$text-xl;
+
+  @media (min-width: 768px){
+    height: 30%;
+    font-size: variaveis.$text-2xl;
+  }
+
+  @media (min-width: 1024px){
+    height: 35%;
+    font-size: variaveis.$text-3xl;
+  }
+}
+

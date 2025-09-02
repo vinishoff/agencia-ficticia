@@ -1,0 +1,29 @@
+@use './variaveis';
+
+@mixin flex-align($align: 'center', $direction: 'row'){
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $align;
+  align-items: center;
+}
+
+@mixin base-section(){
+  width: 100%;
+  margin-top: 2rem;
+  border-top: 1px solid variaveis.$color-primary;
+  @include flex-align(center);
+  flex-wrap: wrap;
+}
+
+@mixin base-section-title(){
+  width: 100%;
+  font-size: variaveis.$text-3xl;
+  margin: 2rem 0rem;
+  text-align: center;
+}
+
+@mixin base-section-text(){
+  width: 100%;
+  font-size: variaveis.$text-xl;
+  text-align: left;
+}
