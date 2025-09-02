@@ -1,14 +1,14 @@
-const menuBarMobile = document.getElementById("menuBar");
-menuBarMobile.addEventListener("click", () => {
-  const divMenuBar    = document.getElementById("divMenuBar");
-  const currentClass  = divMenuBar.className;
-  const newClass      = currentClass === "divMenuBarNone"?"divMenuBarActive":"divMenuBarNone";
+const navBar = document.getElementById("nav__bar");
+navBar.addEventListener("click", () => {
+  const barDisplay    = document.getElementById("bar__display");
+  const currentClass  = barDisplay.className;
+  const newClass      = currentClass === "bar__display--none"?"bar__display":"bar__display--none";
 
-  divMenuBar.classList.add(newClass);
-  divMenuBar.classList.remove(currentClass);
+  barDisplay.classList.add(newClass);
+  barDisplay.classList.remove(currentClass);
 })
 
-const elementForm = document.getElementById("formContato");
+const elementForm = document.getElementById("form");
 elementForm.addEventListener("submit", (event) => {
   event.preventDefault();
   const nome  = document.getElementById("nome").value;

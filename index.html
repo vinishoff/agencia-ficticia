@@ -5,149 +5,147 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ACW</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" href="estilos2.css">
   </head>
-  <body>
+  <body class="body">
     <!-- Header e Nav -->
-    <header>
-      <nav>
-        <h1>ACW</h1>
-        <ul id="navLinks">
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#servicos">Serviços</a></li>
-          <li><a href="#depoimentos">Depoimentos</a></li>
-          <li><a href="#contato">Contato</a></li>
+    <header class="header">
+      <nav class="nav">
+        <h1 class="nav__logo">ACW</h1>
+        <ul id="nav__list" class="nav__list">
+          <li class="nav__item"><a class="nav__link" href="#sobre"      >Sobre</a></li>
+          <li class="nav__item"><a class="nav__link" href="#servicos"   >Serviços</a></li>
+          <li class="nav__item"><a class="nav__link" href="#depoimentos">Depoimentos</a></li>
+          <li class="nav__item"><a class="nav__link" href="#contato"    >Contato</a></li>
         </ul>
-        <i id="menuBar" class="fa-solid fa-bars"></i>
+        <i id="nav__bar" class="nav__bar fa-solid fa-bars"></i>
       </nav>
     </header>
-    <div id="divMenuBar" class="divMenuBarNone">
-      <ul>
-        <li><a href="#sobre">Sobre</a></li>
-        <li><a href="#servicos">Serviços</a></li>
-        <li><a href="#depoimentos">Depoimentos</a></li>
-        <li><a href="#contato">Contato</a></li>
-      </ul>
-    </div>
+    <ul id="bar__display" class="bar__display--none">
+      <li class="bar__item"><a class="bar__link" href="#sobre"      >Sobre</a></li>
+      <li class="bar__item"><a class="bar__link" href="#servicos"   >Serviços</a></li>
+      <li class="bar__item"><a class="bar__link" href="#depoimentos">Depoimentos</a></li>
+      <li class="bar__item"><a class="bar__link" href="#contato"    >Contato</a></li>
+    </ul>
 
-    <main>
-      <!-- Home -->
-      <section id="home">
-        <div id="homeTitle">
+    <!-- Main -->
+    <main class="main">
+      <!-- Section Home -->
+      <section class="home">
+        <div class="home__title">
           <h2>Agência <br>Criativa <br>Web</h2>
         </div>
-        <div id="homeSlogan">
-          <p class="slogan">
-            <span class="line">Design que</span>
-            <span class="line"><strong>conecta</strong>,</span>
-            <span class="line">Tecnologia que</span>
-            <span class="line"><strong>impressiona</strong>.</span>
+        <div class="home__slogan">
+            <p class="slogan display-block">
+            <span class="slogan__line display-block">Design que</span>
+            <span class="slogan__line display-block"><strong>conecta</strong>,</span>
+            <span class="slogan__line display-block">Tecnologia que</span>
+            <span class="slogan__line display-block"><strong>impressiona</strong>.</span>
           </p>
         </div>
       </section>
 
-      <!-- Sobre Nós -->
+      <!-- Section Sobre Nós -->
       <section id="sobre" class="section">
-        <h2>Sobre Nós</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia officia iste nisi quisquam veritatis numquam, molestiae cupiditate nostrum dignissimos accusamus laborum, at est ab?</p>
+        <h2 class="section__title">Sobre Nós</h2>
+        <p class="section__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis quia officia iste nisi quisquam veritatis numquam, molestiae cupiditate nostrum dignissimos accusamus laborum, at est ab.</p>
       </section>
 
-      <!-- Serviços -->
+      <!-- Section Nossos Serviços -->
       <section id="servicos" class="section">
-        <h2>Nossos Serviços</h2>
-        <section class="sectionServ">
-          <i class="fa-solid fa-laptop-code"></i>
-          <h3>Criação de Sites</h3>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ducimus veniam similique animi architecto temporibus.</p>
+        <h2 class="section__title">Nossos Serviços</h2>
+
+        <section class="servicos">
+          <i class="servicos__icon fa-solid fa-laptop-code"></i>
+          <h3 class="servicos__title">Criação de Sites</h3>
+          <p class="servicos__text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae ducimus veniam similique animi architecto temporibus.</p>
         </section>
 
-        <section class="sectionServ">
-          <i class="fa-solid fa-paintbrush"></i>
-          <h3>UI/UX Design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore recusandae est, dicta non dolor aliquam.</p>
+        <section class="servicos">
+          <i class="servicos__icon fa-solid fa-paintbrush"></i>
+          <h3 class="servicos__title">UI/UX Design</h3>
+          <p class="servicos__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Inventore recusandae est, dicta non dolor aliquam.</p>
         </section>
 
-        <section class="sectionServ">
-          <i class="fa-solid fa-magnifying-glass"></i>
-          <h3>SEO Otimização</h3>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium reprehenderit, soluta eum aut libero repellendus.</p>
+        <section class="servicos">
+          <i class="servicos__icon fa-solid fa-magnifying-glass"></i>
+          <h3 class="servicos__title">SEO Otimização</h3>
+          <p class="servicos__text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Praesentium reprehenderit, soluta eum aut libero repellendus.</p>
         </section>
 
-        <section class="sectionServ">
-          <i class="fa-solid fa-wrench"></i>
-          <h3>Manutenção</h3>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia culpa fuga dignissimos accusamus molestias omnis.</p>
+        <section class="servicos">
+          <i class="servicos__icon fa-solid fa-wrench"></i>
+          <h3 class="servicos__title">Manutenção</h3>
+          <p class="servicos__text">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Mollitia culpa fuga dignissimos accusamus molestias omnis.</p>
         </section>
       </section>
 
-      <!-- Depoimentos -->
+      <!-- Section Depoimentos -->
       <section id="depoimentos" class="section">
-        <h2>Depoimentos</h2>
-        <section class="sectionDepUser">
-          <div class="divPerfil">
-            <img src="./images/user.png" alt="Imagem de Perfil Usuario" class="depFoto">
-            <h3 class="depNome">Luan Barbosa Ferreira de Souza</h3>
-            <p class="depEstrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p class="depEmpresa">LBFS Filmagens</p>
-          </div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae esse corporis numquam architecto a nam ratione, expedita facere dolores.</p>
+        <h2 class="section__title">Depoimentos</h2>
+
+        <section class="card">
+          <img class="card-foto" src="./images/user.png" alt="Imagem de Perfil">
+          <h class="card-nome"      >Letícia Cardoso Fernandes</h>
+          <p class="card-avaliacao" >&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="card-empresa"   >LCF Consult. Financeira</p>
+          <p class="card-texto"     >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae esse corporis numquam architecto a nam ratione, expedita facere dolores.</p>
         </section>
 
-        <section class="sectionDepUser">
-          <div class="divPerfil">
-            <img src="./images/user.png" alt="Imagem de Perfil Usuario" class="depFoto">
-            <h3 class="depNome">Letícia Cardoso Fernandes</h3>
-            <p class="depEstrelas">&#9733;&#9733;&#9733;&#9733;&#9734;</p>
-            <p class="depEmpresa">LCF Consult. Financeira</p>
-          </div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laborum pariatur ab sunt. Dicta veritatis animi architecto cupiditate nesciunt nostrum nihil.</p>
+        <section class="card">
+          <img class="card-foto" src="./images/user.png" alt="Imagem de Perfil">
+          <h class="card-nome"      >Luan Barbosa Ferreira de Souza</h>
+          <p class="card-avaliacao" >&#9733;&#9733;&#9733;&#9733;&#9733;</p>
+          <p class="card-empresa"   >LBFS Filmagens</p>
+          <p class="card-texto"     >Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium repudiandae esse corporis numquam architecto a nam ratione, expedita facere dolores.</p>
         </section>
 
-        <section class="sectionDepUser">
-          <div class="divPerfil">
-            <img src="./images/user.png" alt="Imagem de Perfil Usuario" class="depFoto">
-            <h3 class="depNome">Yasmin Barbosa Gomes</h3>
-            <p class="depEstrelas">&#9733;&#9733;&#9733;&#9733;&#9733;</p>
-            <p class="depEmpresa">YBG Eletrônica Ltda</p>
-          </div>
-          <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque maxime dolores, suscipit molestiae mollitia nulla quod. Possimus expedita eaque illo.</p>
+        <section class="card">
+          <img class="card-foto" src="./images/user.png" alt="Imagem de Perfil">
+          <h class="card-nome"      >Yasmin Barbosa Gomes</h>
+          <p class="card-avaliacao" >&#9733;&#9733;&#9733;&#9733;&#9734;</p>
+          <p class="card-empresa"   >YBG Eletrônica Ltda</p>
+          <p class="card-texto"     >Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias eaque maxime dolores, suscipit molestiae mollitia nulla quod. Possimus expedita eaque illo.</p>
         </section>
       </section>
 
-      <!-- Contato -->
+      <!-- Section Contato -->
       <section id="contato" class="section">
-        <h2>Entre em Contato</h2>
-        <div class="divContato">
-          <div class="divInfos">
-            <div>
+        <h2 class="section__title">Entre em Contato</h2>
+
+        <div class="contato">
+          <div class="informacoes">
+            <div class="dados">
               <i class="fa-solid fa-phone"></i>
               <p>(99) 99999-9999</p>
             </div>
-            <div>
+            <div class="dados">
               <i class="fa-solid fa-envelope"></i>
               <p>contato@agenciaawc.com.br</p>
             </div>
-            <div>
+            <div class="dados">
               <i class="fa-solid fa-location-dot"></i>
               <p>Rua Fictícia, 99 - Cidade, SP</p>
             </div>
           </div>
-          <div class="divForm">
-            <form id="formContato">
-              <input id="nome"  class="nomeForm"  type="text"   placeholder="Seu nome"    required>
-              <input id="email" class="emailForm" type="email"  placeholder="Seu e-mail"  required>
-              <textarea id="textarea" class="textareaForm" placeholder="Conte-nos sobre o seu projeto!" required></textarea>
-              <button id="bttnForm" type="submit" class="botaoForm">Enviar</button>
+
+          <div class="formulario">
+            <form id="form">
+              <input id="nome"  class="form-elements"  type="text"   placeholder="Seu nome"    required>
+              <input id="email" class="form-elements" type="email"  placeholder="Seu e-mail"  required>
+              <textarea id="textarea" class="form-elements form-text" placeholder="Conte-nos sobre o seu projeto!" required></textarea>
+              <button id="bttnForm" type="submit" class="form-elements form-button">Enviar</button>
             </form>
           </div>
         </div>
       </section>
     </main>
 
-    <footer>
+    <!-- footer -->
+    <footer class="footer">
       <p>&copy; 2025 Agência Criativa Web. Todos os direitos reservados.</p>
     </footer>
 
-    <script src="scripts.js"></script>
+    <script src="scripts2.js"></script>
   </body>
 </html>
